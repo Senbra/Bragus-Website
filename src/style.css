@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: rgb(165, 67, 67)
+}
+
+footer{
+    background-color: rgb(168, 158, 158);
+}

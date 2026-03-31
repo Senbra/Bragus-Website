@@ -14,7 +14,7 @@ Pages description
     Home
     •	Hero banner
     •	Intro to Bragus gym
-                                •	Quick links (Timetable, Book Trial, Product Showcase)
+    •	Gym Pictures
     •	Gym Address
 
     Book Trial Class
@@ -24,4 +24,7 @@ Pages description
     Contact Us
     •	Contact form
     •	Email + phone
+
+    About
+    •	Photos references
 
