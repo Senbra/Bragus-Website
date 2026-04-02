@@ -1,12 +1,76 @@
+/* -----------------All marging and padding start adjustment */
 *{
     margin: 0;
     padding: 0;
 }
 
+/* ---------------------Header Style-------------------- */
 header{
-    background-color: rgb(165, 67, 67)
+    background-color: rgb(15,15,15);
+    color: white;
+    display: flex;
+    gap: 5%;
+    justify-content: space-between;
+    align-items: center;
+    height: 10dvh;
+
 }
 
+/* -------------------Logo and name style------------- */
+.logoandtitle{
+    display: flex;
+    align-items: center;
+}
+/* ----------------------Navbar style--------------------*/
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10%;
+}
+
+.navbar a{
+    color: whitesmoke;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    font-size: larger;
+}
+
+.navbar a:hover{
+    background-color: rgb(200, 16, 46);
+    border-radius: 0.5rem;  
+}
+
+/* ----------------------Footer style-------------------------*/
 footer{
-    background-color: rgb(168, 158, 158);
+    background-color: rgb(26,26,26);
+    height: 10dvh;
+    display: flex;
+    justify-content: space-between;
+    
+    a {
+        text-decoration: none;
+        color: lightgray;
+        padding: 3px;
+    }
+    a:hover{
+        background-color: rgb(200, 16, 46);
+        border-radius: 0.5rem;  
+    }
+    .footerlinks{
+        display: flex;
+        flex-direction: column;
+    }
+
+    p{
+        color: lightgrey;
+        text-align: center;
+    }
+}
+
+/* ------------------main content style------------------ */
+
+main{
+    height: 80dvh;
 }
