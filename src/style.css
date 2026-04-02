@@ -20,6 +20,14 @@ header{
 .logoandtitle{
     display: flex;
     align-items: center;
+
+    h2{
+        font-family: "Montserrat", sans-serif;
+    }
+    img{
+        width: 10dvh;
+        height: 10dvh;
+    }
 }
 /* ----------------------Navbar style--------------------*/
 .navbar{
@@ -32,9 +40,11 @@ header{
 .navbar a{
     color: whitesmoke;
     text-decoration: none;
-    text-align: center;
-    padding: 5px;
+    font-family: "Open Sans", sans-serif;
     font-size: larger;
+    text-align: center;
+    white-space: nowrap;
+    padding: 5px;
 }
 
 .navbar a:hover{
@@ -51,6 +61,7 @@ footer{
     
     a {
         text-decoration: none;
+        font-size: large;
         color: lightgray;
         padding: 3px;
     }
@@ -61,6 +72,8 @@ footer{
     .footerlinks{
         display: flex;
         flex-direction: column;
+        margin-top: 5px;
+        margin-left: 8px;
     }
 
     p{
