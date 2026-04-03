@@ -14,7 +14,6 @@ Pages description
     •	Contact Us (link)
     •	Google Maps embed
 
-
     Home
     •	Hero banner
     •	Intro to Bragus gym
@@ -23,7 +22,6 @@ Pages description
 
     Book Trial Class
     •	Booking form
-    •	Calendar selector
 
     Contact Us
     •	Contact form
@@ -36,3 +34,4 @@ Pages description
 ## External Tools
 
 - Real Favicon Generator: https://realfavicongenerator.net/
+- Opengraph Generator: https://webcode.tools/open-graph-generator/website
