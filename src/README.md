@@ -30,8 +30,3 @@ Pages description
     About
     •	Photos references
 
-    <!-- Hero banner -->
-    <!-- Intro to Bragus gym -->
-     <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum dignissimos maiores obcaecati enim dolorem nobis doloribus, placeat laudantium, reiciendis quo ab, non itaque! Placeat, tempora vero rerum rem saepe amet?</p>
-    <!-- Gym Pictures -->
-    <!-- Gym Address -->
