@@ -4,9 +4,11 @@ A Brazilian Jiu Jitsu website for a imaginary gym called Bragus. This website ha
 *Since this is an imaginary gym it doesn't have a real address, the address used in this website is from the Gracie Barra gym at Pymble.
 
 Pages description
+
     Header
     •	Logo
     •	Navigation bar
+   
     Footer
     •	Book Trial Class (link)
     •	Contact Us (link)
@@ -30,3 +32,7 @@ Pages description
     About
     •	Photos references
 
+
+## External Tools
+
+- Real Favicon Generator: https://realfavicongenerator.net/
