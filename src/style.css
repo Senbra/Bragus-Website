@@ -30,12 +30,12 @@ header{
     }
 }
 /* ----------------------Navbar style--------------------*/
+
 .navbar{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 10%;
-    /* position: sticky; */
 }
 
 .navbar a{
@@ -86,5 +86,130 @@ footer{
 /* ------------------main content style------------------ */
 
 main{
-    height: 80dvh;
+    height: 80%;
+    h1{
+        font-family: "Montserrat", sans-serif;
+        color: rgb(200, 16, 46);
+        font-weight: 900;
+    }
+
+}
+
+
+
+/* ---------------------Home Intro Style------------------- */
+.homeintro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2vh;
+    margin-top: 5vh;
+    padding: 0 10%;
+    text-align: justify;
+    background-color: whitesmoke;
+    border-radius: 1rem;
+
+    img{
+        width: 45dvw;
+        height: auto;
+        border-radius: 1rem;
+    }
+
+    p{
+        font-family: "Open Sans", sans-serif;
+        font-size: large;
+        color: rgb(50,50,50);
+    }
+}
+
+/* ------------------Topics tile Style------------------- */
+.topics{
+    text-align: center;
+    margin-top: 5vh;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    color: rgb(200, 16, 46);
+}
+
+.timetable{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: whitesmoke;
+    border-radius: 1rem;
+    padding: 2vh 10%;
+    
+    img{
+        width: 50dvw;
+        height: auto;
+        border-radius: 1rem;
+    }
+}
+
+/* ------------------We Want You Section------------------- */
+.wewantyou{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background-color: whitesmoke;
+    border-radius: 1rem;
+    padding: 2vh 10%;
+    gap: 2vh;
+    
+    h3{
+        font-family: "Montserrat", sans-serif;
+        color: rgb(200, 16, 46);
+        font-weight: 900;
+    }
+    
+    p{
+        font-family: "Open Sans", sans-serif;
+        font-size: large;
+        color: rgb(50,50,50);
+        text-align: justify;
+
+    }
+
+    img{
+        width: 50dvw;
+        height: auto;
+        border-radius: 1rem;
+    }
+}
+
+
+/* ------------------Facilities Pictures Style------------------- */
+.gympictures{
+    display: flex;
+    gap: 2vw;
+    justify-content: center;
+    background-color: whitesmoke;
+    padding: 2vh 5%;
+    border-radius: 1rem;
+
+    img{
+        width: 30dvw;
+        height: auto;
+        border-radius: 1rem;
+    }
+  
+}
+
+/* gym address */
+.gymaddress{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    background-color: whitesmoke;
+    border-radius: 1rem;
+    
+    p{
+        font-family: "Open Sans", sans-serif;
+        font-size: larger;
+        color: rgb(50,50,50);
+    }
+
 }
