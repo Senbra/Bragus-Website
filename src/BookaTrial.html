@@ -57,6 +57,40 @@
 <main>
 <!------------------Page name------------------->
     <h1>Book a trial</h1>
+    
+<!-------------Trial Form------------->
+<section class="trialform">
+        <h2>Trial Class Booking</h2>
+    <form action="submit_trial_form.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="date">Select a Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="selectclass">Select a Class:</label>
+        <select id="selectclass" name="selectclass">
+        <option value="">-- Select a class --</option>
+        <option value="kids">Kids</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="advanced">Advanced</option>
+        <option value="no-gi">No-Gi</option>       
+        </select>
+        
+        <label for="subject">What are your reasons for training with us?</label>
+        <textarea id="subject" name="subject" placeholder="Share your reasons if you want..." style="height:100px"></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+</section>
+
+
 
 
 
