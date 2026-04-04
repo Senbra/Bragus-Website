@@ -91,6 +91,8 @@ main{
         font-family: "Montserrat", sans-serif;
         color: rgb(200, 16, 46);
         font-weight: 900;
+        margin-top: 1vh;
+        margin-left: 1vw;
     }
 }
 
@@ -250,3 +252,80 @@ main{
     font-size: x-large;
     font-weight: 800;
     }
+
+
+/* -------------contact us style------------- */
+.contactus-content{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2vh;
+    background-color: whitesmoke;
+    border-radius: 1rem;
+    padding: 5vh 10%;
+    
+
+}
+
+.getintouch{
+    h2{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    color: rgb(15, 15, 15);
+
+    }
+
+p{
+    font-family: "Open Sans", sans-serif;
+    font-size: large;
+    color: rgb(15, 15, 15);
+    font-weight: 700;
+}
+}
+
+/* --------Contact Form Style-------- */
+.contactus-form{
+    border-radius: 5px;
+    background-color: rgb(202, 185, 185);
+    padding: 20px;
+    max-width: 500px;
+    font-family: "Open Sans", sans-serif;
+
+
+
+
+    input[type=text], input[type=email], input[type=tel], textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid rgb(204, 204, 204);
+        border-radius: 0.5rem;
+        box-sizing: border-box; /* Make sure that padding and width stays in place */
+        margin-top: 5px;
+        margin-bottom: 15px; 
+
+
+    }
+
+    h2{
+        font-family: "Montserrat", sans-serif;
+        color: rgb(0, 0, 0);
+        font-weight: 700;
+        margin-bottom: 3vh;
+    }
+
+/* submit button styles */
+    input[type=submit] {
+    background-color: #aa0404;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    }
+
+    input[type=submit]:hover {
+    background-color: #a04545;
+    }
+
+}
+
