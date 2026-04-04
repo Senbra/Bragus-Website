@@ -101,7 +101,7 @@ main{
 .homeintro{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     gap: 2vh;
     margin-top: 5vh;
     padding: 5vh 10%;
