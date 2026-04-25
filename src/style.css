@@ -1,11 +1,11 @@
-/* -----------------All marging and padding start adjustment */
-*{
+/* -----------------All margin and padding start adjustment */
+* {
     margin: 0;
     padding: 0;
 }
 
 /* ---------------------Header Style-------------------- */
-header{
+header {
     background-color: rgb(15,15,15);
     color: white;
     display: flex;
@@ -13,22 +13,21 @@ header{
     justify-content: space-between;
     align-items: center;
     height: 10dvh;
-
 }
 
 /* -------------------Logo and name style------------- */
-.logoandtitle{
+.logoandtitle {
     display: flex;
     align-items: center;
+}
 
-    h2{
-        font-family: "Montserrat", sans-serif;
-    }
-    
-    img{
-        width: 10dvh;
-        height: 10dvh;
-    }
+.logoandtitle h2 {
+    font-family: "Montserrat", sans-serif;
+}
+
+.logoandtitle img {
+    width: 10dvh;
+    height: 10dvh;
 }
 
 /* ----------------------Navbar style--------------------*/
@@ -39,7 +38,12 @@ header{
     margin-right: 10%;
 }
 
-.navbar a{
+.navbar ul {
+  list-style-type: none;
+  display: flex; 
+}
+
+.navbar a {
     color: whitesmoke;
     text-decoration: none;
     font-family: "Open Sans", sans-serif;
@@ -49,56 +53,59 @@ header{
     padding: 5px;
 }
 
-.navbar a:hover{
+.navbar a:hover {
     background-color: rgb(200, 16, 46);
-    border-radius: 0.5rem;  
+    border-radius: 0.5rem;
 }
 
 /* -------------------Footer style-------------------------*/
-footer{
-    background-color: rgb(26,26,26);
+footer {
+    background-color: rgb(26, 26, 26);
     height: 9%;
     display: flex;
     justify-content: space-between;
-    
-    a {
-        text-decoration: none;
-        font-size: large;
-        color: lightgray;
-        padding: 3px;
-    }
-    a:hover{
-        background-color: rgb(200, 16, 46);
-        border-radius: 0.5rem;  
-    }
-    .footerlinks{
-        display: flex;
-        flex-direction: column;
-        margin-top: 5px;
-        margin-left: 8px;
-    }
+}
 
-    p{
-        color: lightgrey;
-        text-align: center;
-    }
+footer a {
+    text-decoration: none;
+    font-size: large;
+    color: lightgray;
+    padding: 3px;
+}
+
+footer a:hover {
+    background-color: rgb(200, 16, 46);
+    border-radius: 0.5rem;
+}
+
+footer .footerlinks {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-left: 8px;
+}
+
+footer p {
+    color: lightgrey;
+    text-align: center;
 }
 
 /* ------------------main content style------------------ */
-main{
+main {
     height: 80%;
     min-height: 80vh;
-    h1{
-        font-family: "Montserrat", sans-serif;
-        color: rgb(200, 16, 46);
-        font-weight: 900;
-        margin-top: 1vh;
-        margin-left: 1vw;
-    }
+}
+
+main h2{
+    font-family: "Montserrat", sans-serif;
+    color: rgb(200, 16, 46);
+    font-weight: 900;
+    margin-top: 1vh;
+    margin-left: 1vw;
 }
 
 /* ---------------------Home Intro Style------------------- */
-.homeintro{
+.homeintro {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -108,25 +115,24 @@ main{
     text-align: justify;
     background-color: whitesmoke;
     border-radius: 1rem;
-
-    img{
-        width: 45dvw;
-        max-width: 500px;
-        height: auto;
-        border-radius: 1rem;
-    }
-
-    p{
-        font-family: "Open Sans", sans-serif;
-        font-size: large;
-        color: rgb(50,50,50);
-    }
 }
 
-/* ------------------Topics tile Style------------------- */
-.topics{
+.homeintro img {
+    width: 45dvw;
+    max-width: 500px;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.homeintro p {
+    font-family: "Open Sans", sans-serif;
+    font-size: large;
+    color: rgb(50, 50, 50);
+}
+
+/* ------------------Topics title Style------------------- */
+.topics {
     text-align: center;
-    margin-top: 5vh;
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
     color: rgb(200, 16, 46);
@@ -134,28 +140,28 @@ main{
 }
 
 /* ----------------Time Table Link Style------------------ */
-.timetablelink{
+.timetablelink {
     display: flex;
     justify-content: center;
     background-color: whitesmoke;
     border-radius: 1rem;
     padding: 1vh;
+}
 
-    img{
-        width: 50dvw;
-        max-width: 500px;
-        height: auto;
-        border-radius: 1rem;
-        transition: transform 0.3s ease; /* Add a transition for smooth scaling */
-    }
+.timetablelink img {
+    width: 50dvw;
+    max-width: 500px;
+    height: auto;
+    border-radius: 1rem;
+    transition: transform 0.3s ease;
+}
 
-    img:hover {
-        transform: scale(1.05); /* Scale up the image on hover */
-    }
+.timetablelink img:hover {
+    transform: scale(1.05);
 }
 
 /* ------------------We Want You Section------------------- */
-.wewantyou{
+.wewantyou {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -163,54 +169,51 @@ main{
     border-radius: 1rem;
     padding: 2vh 10%;
     gap: 2vh;
-    
-    h3{
-        font-family: "Montserrat", sans-serif;
-        color: rgb(200, 16, 46);
-        font-weight: 900;
-    }
-    
-    p{
-        font-family: "Open Sans", sans-serif;
-        font-size: large;
-        color: rgb(50,50,50);
-        text-align: justify;
+}
 
-    }
+.wewantyou h3 {
+    font-family: "Montserrat", sans-serif;
+    color: rgb(200, 16, 46);
+    font-weight: 900;
+}
 
-    img{
-        width: 50dvw;
-        max-width: 500px;
-        height: auto;
-        border-radius: 1rem;
+.wewantyou p {
+    font-family: "Open Sans", sans-serif;
+    font-size: large;
+    color: rgb(50, 50, 50);
+    text-align: justify;
+}
 
-        transition: transform 0.3s ease; /* Add a transition for smooth scaling */
-    }
+.wewantyou img {
+    width: 50dvw;
+    max-width: 500px;
+    height: auto;
+    border-radius: 1rem;
+    transition: transform 0.3s ease;
+}
 
-    img:hover {
-        transform: scale(1.05); /* Scale up the image on hover */
-    }
+.wewantyou img:hover {
+    transform: scale(1.05);
 }
 
 /* --------------Facilities Pictures Style---------------- */
-.gympictures{
+.gympictures {
     display: flex;
     gap: 2vw;
     justify-content: center;
     background-color: whitesmoke;
     padding: 2vh 5%;
     border-radius: 1rem;
+}
 
-    img{
-        width: 30dvw;
-        height: auto;
-        border-radius: 1rem;
-    }
-  
+.gympictures img {
+    width: 30dvw;
+    height: auto;
+    border-radius: 1rem;
 }
 
 /* gym address */
-.gymaddress{
+.gymaddress {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -219,17 +222,16 @@ main{
     margin-bottom: 1vh;
     background-color: whitesmoke;
     border-radius: 1rem;
-    
-    p{
-        font-family: "Open Sans", sans-serif;
-        font-size: larger;
-        color: rgb(50,50,50);
-    }
+}
 
+.gymaddress p {
+    font-family: "Open Sans", sans-serif;
+    font-size: larger;
+    color: rgb(50, 50, 50);
 }
 
 /*--------------------time table style------------------- */
-.timetable{
+.timetable {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10vh;
@@ -239,24 +241,24 @@ main{
     background-color: whitesmoke;
     border-radius: 1rem;
     padding: 5vh;
+}
 
-    th {
+.timetable th {
     border: 2px solid #ffffff;
     padding: 10px;
     text-align: center;
-    background-color: rgb(50,50,50);
+    background-color: rgb(50, 50, 50);
     color: white;
     font-family: "Open Sans", sans-serif;
-    }
 }
-.timetable-header{
+
+.timetable-header {
     font-size: x-large;
     font-weight: 800;
-    }
-
+}
 
 /* -------------contact us style------------- */
-.contactus-content{
+.contactus-content {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -264,74 +266,66 @@ main{
     background-color: whitesmoke;
     border-radius: 1rem;
     padding: 5vh 10%;
-    
-
 }
 
-.getintouch{
-    h2{
+.getintouch h2 {
     font-family: "Montserrat", sans-serif;
     font-weight: 900;
     color: rgb(15, 15, 15);
+}
 
-    }
-
-p{
+.getintouch p {
     font-family: "Open Sans", sans-serif;
     font-size: large;
     color: rgb(15, 15, 15);
     font-weight: 700;
 }
-}
 
 /* --------Contact Form Style-------- */
-.contactus-form{
+.contactus-form {
     border-radius: 5px;
     background-color: rgb(202, 185, 185);
     padding: 20px;
     max-width: 500px;
     font-family: "Open Sans", sans-serif;
+}
 
+.contactus-form input[type="text"],
+.contactus-form input[type="email"],
+.contactus-form input[type="tel"],
+.contactus-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
 
-
-
-    input[type=text], input[type=email], input[type=tel], textarea {
-        width: 100%;
-        padding: 12px;
-        border: 1px solid rgb(204, 204, 204);
-        border-radius: 0.5rem;
-        box-sizing: border-box; /* Make sure that padding and width stays in place */
-        margin-top: 5px;
-        margin-bottom: 15px; 
-
-
-    }
-
-    h2{
-        font-family: "Montserrat", sans-serif;
-        color: rgb(0, 0, 0);
-        font-weight: 700;
-        margin-bottom: 3vh;
-    }
+.contactus-form h2 {
+    font-family: "Montserrat", sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    margin-bottom: 3vh;
+}
 
 /* submit button styles */
-    input[type=submit] {
+.contactus-form input[type="submit"] {
     background-color: #aa0404;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     width: 100%;
-    }
+}
 
-    input[type=submit]:hover {
+.contactus-form input[type="submit"]:hover {
     background-color: #a04545;
-    }
-
 }
 
 /* ------Book a Trial Form---------*/
-.trialform{
+.trialform {
     border-radius: 5px;
     background-color: rgb(202, 185, 185);
     padding: 20px;
@@ -342,46 +336,46 @@ p{
     align-items: center;
     margin: 10vh;
     margin-left: 20vw;
-    
+}
 
-    
+.trialform input[type="text"],
+.trialform input[type="email"],
+.trialform input[type="tel"],
+.trialform input[type="date"],
+.trialform select[name="selectclass"],
+.trialform textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
 
-    input[type=text], input[type=email], input[type=tel], input[type=date], select[name="selectclass"], textarea {
-        width: 100%;
-        padding: 12px;
-        border: 1px solid rgb(204, 204, 204);
-        border-radius: 0.5rem;
-        box-sizing: border-box; /* Make sure that padding and width stays in place */
-        margin-top: 5px;
-        margin-bottom: 15px; 
-    }
-
-    h2{
-        font-family: "Montserrat", sans-serif;
-        color: rgb(0, 0, 0);
-        font-weight: 700;
-        margin-bottom: 3vh;
-    
-    }
+.trialform h2 {
+    font-family: "Montserrat", sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    margin-bottom: 3vh;
+}
 
 /* submit button styles */
-    input[type=submit] {
+.trialform input[type="submit"] {
     background-color: #aa0404;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     width: 100%;
-    }
-
-    input[type=submit]:hover {
-    background-color: #a04545;
-    }
 }
 
+.trialform input[type="submit"]:hover {
+    background-color: #a04545;
+}
 
 /*---------About Table Style-------*/
-.abouttable{
+.abouttable {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10vh;
@@ -391,13 +385,22 @@ p{
     background-color: whitesmoke;
     border-radius: 1rem;
     padding: 5vh;
+}
 
-    th {
+.abouttable th {
     border: 2px solid #ffffff;
     padding: 10px;
     text-align: center;
-    background-color: rgb(50,50,50);
+    background-color: rgb(50, 50, 50);
     color: white;
     font-family: "Open Sans", sans-serif;
-    }
+}
+
+.abouttable td {
+    border: 2px solid #ffffff;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(50, 50, 50);
+    color: white;
+    font-family: "Open Sans", sans-serif;
 }
