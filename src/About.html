@@ -30,100 +30,112 @@
     <meta property="og:url" content="https://bragusgym.netlify.app/">
     <meta property="og:image" content="https://bragusgym.netlify.app/img/logo.jpg">
     <meta property="og:description" content="Bragus Brazilian Jiu Jitsu website">
+
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <!-- logo and title -->
-        <section class="logoandtitle">
-            <img src="./img/Logo.jpg" alt="Logo">
-            <h1>Bragus Gym</h1>
-        </section>
+<header>
+    <!-- logo and title -->
+    <section class="logoandtitle">
+        <img src="./img/Logo.jpg" alt="Logo">
+        <h1>Bragus Gym</h1>
+    </section>
 
-        <!-- navbar -->
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="BookaTrial.html">Book a trial</a></li>
-                <li><a href="TimeTable.html">Time table</a></li>
-                <li><a href="ContactUs.html">Contact us</a></li>
-                <li><a href="About.html">About</a></li>
-            </ul>
-        </nav>
-    </header>
+    <button id="open-sidebar-button" type="button" onclick="openSidebar()">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="red" width="24" height="24" aria-hidden="true"> <path d="M4 5h16v2H4zm0 6h16v2H4zm0 6h16v2H4z"></path> </svg>
+    </button>
 
-    <main>
-        <!-- Page name -->
-        <h2>About</h2>
+    <!-- navbar -->
+    <nav id="navbar">
+        <ul>
+            <li>
+                <button id="close-sidebar-button" type="button" onclick="closeSidebar()"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="red" width="24" height="24" aria-hidden="true"> <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path> </svg>
+                </button>
+            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="BookaTrial.html">Book a trial</a></li>
+            <li><a href="TimeTable.html">Time table</a></li>
+            <li><a href="ContactUs.html">Contact us</a></li>
+            <li><a href="About.html">About</a></li>
+        </ul>
+    </nav>
+</header>
 
-        <!-- References Table -->
-        <table class="abouttable">
-            <tr>
-                <th class="timetable-header" colspan="3">References</th>
-            </tr>
-            <tr>
-                <th>Image Name</th>
-                <th>Link Reference</th>
-                <th>Image</th>
-            </tr>
-            <tr>
-                <td>Logo</td>
-                <td>
-                    Fernandez, L 2024, BJJ Fighter, Pinterest, viewed 2 April 2026,
-                    <a href="https://au.pinterest.com/pin/85849936641582207/">https://au.pinterest.com/pin/85849936641582207/</a>.
-                </td>
-                <td><img src="./img/Logo.jpg" alt="Logo" width="100" height="100"></td>
-            </tr>
-            <tr>
-                <td>We want you</td>
-                <td>
-                    Lucina, E 2023, Bjj Poses, Pinterest, viewed 3 April 2026,
-                    <a href="https://au.pinterest.com/pin/579416308335830086/">https://au.pinterest.com/pin/579416308335830086/</a>.
-                </td>
-                <td><img src="./img/we_want_you.png" alt="We Want You" width="100" height="100"></td>
-            </tr>
-            <tr>
-                <td>Hero banner</td>
-                <td>
-                    2021, Young Men in Black Uniforms Doing Martial Arts, Pexels, viewed 3 April 2026,
-                    <a href="https://www.pexels.com/photo/young-men-in-black-uniforms-doing-martial-arts-7988374/">https://www.pexels.com/photo/young-men-in-black-uniforms-doing-martial-arts-7988374/</a>.
-                </td>
-                <td><img src="./img/Hero_banner.jpg" alt="Hero Banner" width="100" height="100"></td>
-            </tr>
-            <tr>
-                <td>Time Table</td>
-                <td>
-                    2021, Planner on a Table, Pexels, viewed 3 April 2026,
-                    <a href="https://www.pexels.com/photo/planner-on-a-table-7428866/">https://www.pexels.com/photo/planner-on-a-table-7428866/</a>.
-                </td>
-                <td><img src="./img/Time_Table.jpg" alt="Time Table" width="100" height="100"></td>
-            </tr>
-            <tr>
-                <td>Gym space 1</td>
-                <td>
-                    Phenom Brazilian Jiu Jitsu 2024, Pinterest, viewed 3 April 2026,
-                    <a href="https://au.pinterest.com/pin/911627149563548334/">https://au.pinterest.com/pin/911627149563548334/</a>.
-                </td>
-                <td><img src="./img/Gym_space_1.jpg" alt="Gym Space 1" width="100" height="100"></td>
-            </tr>
-            <tr>
-                <td>Gym space 2</td>
-                <td>
-                    aknoraa 2026, Pinterest, viewed 3 April 2026,
-                    <a href="https://au.pinterest.com/pin/981432943771243057/">https://au.pinterest.com/pin/981432943771243057/</a>.
-                </td>
-                <td><img src="./img/Gym_space_2.jpg" alt="Gym Space 2" width="100" height="100"></td>
-            </tr>
-            <tr>
-                <td>Gym space 3</td>
-                <td>
-                    Meletti, M 2020, Pinterest, viewed 3 April 2026,
-                    <a href="https://au.pinterest.com/pin/5981411979548569/">https://au.pinterest.com/pin/5981411979548569/</a>.
-                </td>
-                <td><img src="./img/Gym_space_3.jpg" alt="Gym Space 3" width="100" height="100"></td>
-            </tr>
-        </table>
-    </main>
+
+<main>
+    <!-- Page name -->
+     <h2>About</h2>
+
+    <!-- References Table -->
+    <table class="abouttable">
+        <tr>
+            <th class="timetable-header" colspan="3">References</th>
+        </tr>
+        <tr>
+            <th>Image Name</th>
+            <th>Link Reference</th>
+            <th>Image</th>
+        </tr>
+        <tr>
+        <td>Logo</td>
+        <td>
+            Fernandez, L 2024, BJJ Fighter, Pinterest, viewed 2 April 2026,
+            <a href="https://au.pinterest.com/pin/85849936641582207/">https://au.pinterest.com/pin/85849936641582207/</a>.
+        </td>
+        <td><img src="./img/Logo.jpg" alt="Logo" width="100" height="100"></td>
+        </tr>
+        <tr>
+            <td>We want you</td>
+            <td>
+                Lucina, E 2023, Bjj Poses, Pinterest, viewed 3 April 2026,
+                <a href="https://au.pinterest.com/pin/579416308335830086/">https://au.pinterest.com/pin/579416308335830086/</a>.
+            </td>
+            <td><img src="./img/we_want_you.png" alt="We Want You" width="100" height="100"></td>
+        </tr>
+        <tr>
+            <td>Hero banner</td>
+            <td>
+                2021, Young Men in Black Uniforms Doing Martial Arts, Pexels, viewed 3 April 2026,
+                <a href="https://www.pexels.com/photo/young-men-in-black-uniforms-doing-martial-arts-7988374/">https://www.pexels.com/photo/young-men-in-black-uniforms-doing-martial-arts-7988374/</a>.
+            </td>
+            <td><img src="./img/Hero_banner.jpg" alt="Hero Banner" width="100" height="100"></td>
+        </tr>
+        <tr>
+            <td>Time Table</td>
+            <td>
+                2021, Planner on a Table, Pexels, viewed 3 April 2026,
+                <a href="https://www.pexels.com/photo/planner-on-a-table-7428866/">https://www.pexels.com/photo/planner-on-a-table-7428866/</a>.
+            </td>
+            <td><img src="./img/Time_Table.jpg" alt="Time Table" width="100" height="100"></td>
+        </tr>
+        <tr>
+            <td>Gym space 1</td>
+            <td>
+                Phenom Brazilian Jiu Jitsu 2024, Pinterest, viewed 3 April 2026,
+                <a href="https://au.pinterest.com/pin/911627149563548334/">https://au.pinterest.com/pin/911627149563548334/</a>.
+            </td>
+            <td><img src="./img/Gym_space_1.jpg" alt="Gym Space 1" width="100" height="100"></td>
+        </tr>
+        <tr>
+            <td>Gym space 2</td>
+            <td>
+                aknoraa 2026, Pinterest, viewed 3 April 2026,
+                <a href="https://au.pinterest.com/pin/981432943771243057/">https://au.pinterest.com/pin/981432943771243057/</a>.
+            </td>
+            <td><img src="./img/Gym_space_2.jpg" alt="Gym Space 2" width="100" height="100"></td>
+        </tr>
+        <tr>
+            <td>Gym space 3</td>
+            <td>
+                Meletti, M 2020, Pinterest, viewed 3 April 2026,
+                <a href="https://au.pinterest.com/pin/5981411979548569/">https://au.pinterest.com/pin/5981411979548569/</a>.
+            </td>
+            <td><img src="./img/Gym_space_3.jpg" alt="Gym Space 3" width="100" height="100"></td>
+        </tr>
+    </table>
+</main>
 
 <footer>
     <div class="footerlinks">

@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* ---------------------Header Style-------------------- */
@@ -31,33 +32,87 @@ header {
 }
 
 /* ----------------------Navbar style--------------------*/
-.navbar{
+nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 10%;
 }
 
-.navbar ul {
+nav ul {
   list-style-type: none;
   display: flex; 
 }
 
-.navbar a {
+nav li {
+  display: flex;
+}
+
+nav a {
     color: whitesmoke;
     text-decoration: none;
     font-family: "Open Sans", sans-serif;
     font-size: larger;
-    text-align: center;
-    white-space: nowrap;
-    padding: 5px;
+    padding: 0.5em;
 }
 
-.navbar a:hover {
+nav a:hover {
     background-color: rgb(200, 16, 46);
     border-radius: 0.5rem;
 }
 
+
+#open-sidebar-button {
+    display: none;
+    border: none;
+    padding: 1em;
+    margin-left: auto;
+    cursor: pointer;
+}  
+
+#close-sidebar-button {
+    display: none;
+    border: none;
+    padding: 1em;
+    cursor: pointer;
+}
+
+
+
+
+
+
+@media screen and (max-width: 815px) {
+    #open-sidebar-button, #close-sidebar-button {
+        display: block;
+    }
+
+   nav{
+    position:fixed;
+    top: 0;
+    right: -100%;
+    height: 50dvh;
+    width: min(15em, 100%);
+    border-left: 1px solid rgb(200, 16, 46);
+    z-index: 10;
+    background-color: rgb(15,15,15);
+    transition: right 0.3s ease-out;
+   }
+   
+   nav.show {
+    right: 0;
+    }
+   
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav a {
+        padding: 1em;
+        width: 100%;
+    }
+    
+}
 /* -------------------Footer style-------------------------*/
 footer {
     background-color: rgb(26, 26, 26);
@@ -243,7 +298,7 @@ main h2{
     padding: 5vh;
 }
 
-.timetable th {
+.timetable th, .timetable td {
     border: 2px solid #ffffff;
     padding: 10px;
     text-align: center;

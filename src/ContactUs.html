@@ -30,26 +30,37 @@
     <meta property="og:url" content="https://bragusgym.netlify.app/">
     <meta property="og:image" content="https://bragusgym.netlify.app/img/logo.jpg">
     <meta property="og:description" content="Bragus Brazilian Jiu Jitsu website">
+
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-<header>
-<!--logo and title-->
-        <section class="logoandtitle">
-            <img src="./img/Logo.jpg" alt="Logo">
-            <h1>Bragus Gym</h1>
-        </section>
+ <header>
+    <!-- logo and title -->
+    <section class="logoandtitle">
+        <img src="./img/Logo.jpg" alt="Logo">
+        <h1>Bragus Gym</h1>
+    </section>
 
-<!--navbar-->
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="BookaTrial.html">Book a trial</a></li>
-                <li><a href="TimeTable.html">Time table</a></li>
-                <li><a href="ContactUs.html">Contact us</a></li>
-                <li><a href="About.html">About</a></li>
-            </ul>
-        </nav>
+    <button id="open-sidebar-button" type="button" onclick="openSidebar()">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="red" width="24" height="24" aria-hidden="true"> <path d="M4 5h16v2H4zm0 6h16v2H4zm0 6h16v2H4z"></path> </svg>
+    </button>
+
+    <!-- navbar -->
+    <nav id="navbar">
+        <ul>
+            <li>
+                <button id="close-sidebar-button" type="button" onclick="closeSidebar()"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="red" width="24" height="24" aria-hidden="true"> <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path> </svg>
+                </button>
+            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="BookaTrial.html">Book a trial</a></li>
+            <li><a href="TimeTable.html">Time table</a></li>
+            <li><a href="ContactUs.html">Contact us</a></li>
+            <li><a href="About.html">About</a></li>
+        </ul>
+    </nav>
 </header>
 
 
