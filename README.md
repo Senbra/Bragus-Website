@@ -1,3 +1,7 @@
+# link for website
+https://bragusgym.netlify.app/
+
+
 # Bragus-Website
 A Brazilian Jiu Jitsu website for a imaginary gym called Bragus. This website has the goal to fulfil the assessment requirements for the Web Development subject.
 
